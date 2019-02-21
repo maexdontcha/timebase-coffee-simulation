@@ -1,4 +1,12 @@
-# wscat -c ws://localhost:8080/clock
+# Taktgeber für die kaffeesimulation
+
+## How to connect
+
+```
+wscat -c ws://localhost:8080/clock
+```
+
+## How to Run
 
 in Mac/Linux
 
