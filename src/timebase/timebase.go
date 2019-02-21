@@ -25,7 +25,7 @@ func main() {
 
 	go emmitToAll()
 	// append works on nil slices.
-	http.HandleFunc("/echo", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/clock", func(w http.ResponseWriter, r *http.Request) {
 		conn, _ := upgrader.Upgrade(w, r, nil) // error ignored for sake of simplicity
 		connMap = append(connMap, conn)
 		// fmt.Println(connMap)
